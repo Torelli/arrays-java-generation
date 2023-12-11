@@ -7,7 +7,6 @@ public class Exercicio3 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         int[][] matriz = new int[3][3];
-        String diagPrincipal = "";
         int num;
 
         for(int linha = 0; linha < 3; linha++) {
