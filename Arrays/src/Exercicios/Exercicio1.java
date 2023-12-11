@@ -6,19 +6,19 @@ public class Exercicio1 {
 
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        int[] num = new int[10];
+        int[] vetorNumeros = new int[10];
         int numero, posicao = -1;
         boolean encontrado = false;
 
         for(int i = 0; i < 10; i++) {
             System.out.println("Digite o " + (i + 1) + "ª número: ");
-            num[i] = input.nextInt();
+            vetorNumeros[i] = input.nextInt();
 
-            for(int j = 0; j < num.length; j++) {
+            for(int j = 0; j < vetorNumeros.length; j++) {
                 if(j != i) {
-                    while (num[i] == num[j]) {
+                    while (vetorNumeros[i] == vetorNumeros[j]) {
                         System.out.println("Os números não podem se repetir! Digite um novo número");
-                        num[i] = input.nextInt();
+                        vetorNumeros[i] = input.nextInt();
                     }
                 }
             }
@@ -27,7 +27,7 @@ public class Exercicio1 {
         numero = input.nextInt();
 
         for(int i = 0; i < 10; i++) {
-            if(num[i] == numero) {
+            if(vetorNumeros[i] == numero) {
                 encontrado = true;
                 posicao = i;
             }
